@@ -1,0 +1,52 @@
+{
+  "name": "server_starter_template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./server.js",
+    "test": "mocha ./server/",
+    "postinstall": "husky install",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.+(ts|tsx|js|jsx|json|css|md|mdx|html)\"",
+    "prettier:fix": "prettier --ignore-path .gitignore \"**/*.+(ts|tsx|js|jsx|json|css|md|mdx|html)\" --write",
+    "lint": "eslint --ignore-path .gitignore --ext .js,.jsx,.ts,.tsx .",
+    "lint:fix": "npm run lint -- --fix",
+    "lint-staged": "lint-staged — config .lintstagedrc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-s-t-e-y-a/server_starter_template.git"
+  },
+  "author": "krishna seth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a-s-t-e-y-a/Template_folder_structure/issues"
+  },
+  "homepage": "https://github.com/a-s-t-e-y-a/Template_folder_structure#readme",
+  "dependencies": {
+    "@prisma/client": "^4.7.1",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "email-validator": "^2.0.4",
+    "express": "^4.18.2",
+    "joi": "^17.7.0",
+    "jsonwebtoken": "^8.5.1",
+    "lint-staged": "^13.1.0",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "eslint": "^8.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.1",
+    "prisma": "^4.7.1"
+  }
+}
